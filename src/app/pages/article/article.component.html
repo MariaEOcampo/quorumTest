@@ -1,0 +1,5 @@
+<h1>Full Article</h1>
+<div class="loader-container" *ngIf="!article">
+  <app-loader></app-loader>
+</div>
+<app-article-card-detail [article]="article"></app-article-card-detail>

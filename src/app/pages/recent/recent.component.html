@@ -1,0 +1,18 @@
+<h1>Recent News</h1>
+<div class="loader-container" *ngIf="newsByDate.length == 0">
+  <app-loader></app-loader>
+</div>
+<div class="main-container" *ngIf="newsByDate.length > 0">
+  <div class="d-flex flex-wrap category-container">
+    <div *ngFor="let card of newsByDate">
+      <app-card-news
+        [title]="card.title"
+        [category]="card.category"
+        [views]="card.views"
+        [url]="card.imageUrl"
+        [date]="card.createdAt"
+        [id]="card.id"
+      ></app-card-news>
+    </div>
+  </div>
+</div>

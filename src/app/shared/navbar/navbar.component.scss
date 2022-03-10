@@ -1,0 +1,30 @@
+@import '../../../assets/styles/variables';
+
+.nav-color{
+    background-color: $blue!important;
+
+}
+
+.nav-link{
+    color: $white!important;
+    &:hover{
+        color:$yellow!important;
+    }
+
+}
+
+.navbar-brand{
+    color: $white!important;
+    font-weight: 700;
+    margin-right: auto;
+    padding-right: 2rem!important;
+}
+
+.icon-home{
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.active{
+    color: $yellow!important;
+}

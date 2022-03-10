@@ -1,0 +1,14 @@
+<h1>Categories</h1>
+<div class="loader-container" *ngIf="listOfCategories.length == 0">
+  <app-loader></app-loader>
+</div>
+<div class="main-container" *ngIf="listOfCategories.length > 0">
+  <div class="d-flex flex-wrap category-container">
+    <div *ngFor="let item of listOfCategories">
+      <app-card-category
+        [name]="item"
+        [url]="newCategoryUrl[item]"
+      ></app-card-category>
+    </div>
+  </div>
+</div>

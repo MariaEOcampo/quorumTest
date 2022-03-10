@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/variables';
+
+html, body { height: 100%; }
+body { margin: 0; 
+    font-family: $main-font;
+    background-color: $white;
+ }
+
+ .category-container{
+    justify-content: center;
+    display: flex;
+    @media (max-width:576px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+}
+
+.main-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loader-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  
+}
+
